@@ -1,0 +1,42 @@
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+select {
+	border:2px solid red;
+	border-radius: 5px;
+	padding: 8px;
+	margin-left:40%;
+	margin-top: 2%;
+	width: 20%;
+	font-size: 20px;
+}
+input {
+	border:2px solid red;
+	border-radius: 5px;
+	padding: 8px;
+	margin-left: 45%;
+	margin-top: 2%;
+	font-size: 20px;
+	width: 10%;
+}
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.uno {
+	margin-top: 16%;
+}
+
+select:hover, input:hover {
+	cursor: pointer;
+	background-color: lightgray;
+}
+.vol {
+	margin-left: 45%;
+	width: 10%;
+}
+select:focus, input:focus {
+	border:2px solid green;
+}

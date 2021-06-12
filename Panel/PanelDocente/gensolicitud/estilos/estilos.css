@@ -1,0 +1,30 @@
+fieldset {
+	width: 25%;
+	margin-top: 18%;
+	margin-left: 37%;
+	border:2px solid green;
+	background-color: lightgreen;
+}
+input {
+	width: 95%;
+	margin-bottom: 1%;
+	border:2px solid red;
+	border-radius: 5px;
+	padding: 8px;
+}
+input:focus {
+	border:2px solid green;
+}
+input:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.but{
+	margin-left: 6%;
+	width: 40%;
+}

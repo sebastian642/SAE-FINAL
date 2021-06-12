@@ -1,0 +1,268 @@
+﻿
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.full-width {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+/*=========== Barra de navegacion ===*/
+.NavBarP,
+.NavBarP-Logo,
+.NavBarP-Nav,
+.NavBarP-Nav > ul,
+.NavBarP-Nav > ul > li,
+.NavBarP-Nav > ul > li > a {
+    height: 50px;
+    line-height: 50px;
+}
+/*ESTO CONTROLA LA BARRA NEGRA*/
+.NavBarP {
+    background-color: #141414;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    height: 60px;
+    line-height: 50px;
+}
+/*HASTA AQUI*/
+
+
+/*ESTO CONTRLA LA ALTURA*/
+
+    /*VAS HASTA AQUI*/
+
+   
+/*====== Imagen ==*/
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(80vh - 50px);
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-out;
+    background-image: url('../assets/img/banner-1.jpg');
+    animation: banner 28s infinite linear; 
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+    /*LINK DECORADO SE PUEDE UTILIZAR PARA COLOCAR OTROS LINKS*/
+    .banner-content a {
+        text-decoration: none;
+        color: #FFF;
+        padding: 9px 20px;
+        border: 1px solid #FFF;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+    }
+     
+        .banner-content a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        /*HASTA AQUI*/
+.banner2-content a {
+    text-decoration: none;
+    color:black;
+    padding: 9px 20px; 
+    border: 1px solid black;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+        .banner2-content a:hover {
+            background-color: red;
+            color: #333;
+        }
+@keyframes banner {
+    0% {
+        background-image: url(Imagenes/banner-1.jpg);
+    }
+
+    25% {
+        background-image: url(Imagenes/banner-1.jpg);
+    }
+
+
+    26% {
+        background-image: url(Imagenes/banner-2.jpg);
+    }
+
+    50% {
+        background-image: url(Imagenes/banner-2.jpg);
+    }
+
+
+    51% {
+        background-image: url(Imagenes/banner-3.jpg);
+    }
+
+    75% {
+        background-image: url(Imagenes/banner-3.jpg);
+    }
+
+
+    76% {
+        background-image: url(Imagenes/banner-4.jpg);
+    }
+
+    100% {
+        background-image: url(Imagenes/banner-4.jpg);
+    }
+}
+
+
+
+/*Estilos para el encabezado*/
+ 
+.header {
+   
+
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    height: 60px;
+    line-height: 30px;
+}
+
+
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 100px;
+}
+
+    .container .btn-menu label {
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+  
+
+.container .menu {
+    float: left;
+    padding-top: 10px;
+    line-height: 100px;
+    padding-left: 50px;
+}
+
+    .container .menu a {
+        display: inline-block;
+        padding: 15px;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+        font-size: 15px;
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+
+        .container .menu a:hover {
+            border-bottom: 2px solid #c7c7c7;
+            padding-bottom: 5px;
+        }
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/ 
+.barra img {
+    display: none;
+}
+
+
+#btn-menu {
+    display: none;
+    background-position-x:10px;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 77;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: absolute;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    visibility: visible;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+} 
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+    .cont-menu nav a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+
+        .cont-menu nav a:hover {
+            border-left: 5px solid #c7c7c7;
+            background: #1f1f1f;
+        }
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/

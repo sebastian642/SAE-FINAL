@@ -1,0 +1,50 @@
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 20px;
+}
+table {
+	width: 100%;
+	background-color: lightgreen;
+}
+td {
+	border-bottom: 2px solid red;
+	width: 80%;
+	padding: 10px;
+}
+div {
+	margin-left: 27%;
+	margin-top: 8%;
+	border:2px solid red;
+	width: 700px;
+	height: 400px;
+	overflow-y: scroll;
+	border-radius: 5px;
+}
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+td:hover {
+	cursor: pointer;
+}
+input {
+	border:2px solid red;
+	border-radius: 5px;
+	margin-left: 40%;
+	margin-top: 2%;
+	padding: 8px;
+	font-size: 20px;
+	width: 10%;
+}
+input:hover {
+	cursor: pointer;
+	background-color: lightgray;
+}
+input:focus {
+	border:2px solid green;
+}
+.volv {
+	margin-left: 2%;
+}

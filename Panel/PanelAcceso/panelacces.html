@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel Acceso</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+</head>
+<body background="../../logo/Logo.png">
+	<header>
+		<h1>Elija su función</h1>
+	</header>
+	<div>
+	<a href="../PanelPrestamista/panelprestamista.html"><input type="button" name="Admin" value="Prestamista"></a>
+	<a href="../PanelDocente/paneldocente.html"><input class="Docente" type="button" name="Docente" value="Docente"></a>
+	</div>
+	<div>
+		<a href="../../Inicio de sesión SAE/index.html"><input onclick="ext()" id="salir" class="volver" type="button" name="Volver" value="Salir"></a>
+	</div>
+<script type="text/javascript">
+	var exit = getElementById("salir");
+	function ext() {
+		alert("Seguro que deseas salir?");
+	}
+</script>
+</body>
+</html>

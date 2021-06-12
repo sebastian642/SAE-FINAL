@@ -1,0 +1,32 @@
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+input {
+	border:2px solid red;
+	border-radius: 5px;
+	padding: 8px;
+	margin-left: 38.5%;
+	margin-top: 1%;
+	font-size: 20px;
+	width: 22%;
+}
+input:hover {
+	background-color: lightgray;
+}
+input:focus {
+	border:2px solid green;
+}
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bt {
+	width: 10%;
+	margin-left: 45%;
+	cursor: pointer;
+}
+.pl {
+	margin-top: 15%;
+}

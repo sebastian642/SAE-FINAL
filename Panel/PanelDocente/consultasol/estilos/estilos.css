@@ -1,0 +1,44 @@
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+select {
+	border:2px solid red;
+	border-radius: 5px;
+	padding: 8px;
+	font-size: 20px;
+	margin-left: 40%;
+	margin-top: 16%;
+	width: 20%;
+}
+select:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+select:focus {
+	border:2px solid green;
+}
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+input {
+	border:2px solid red;
+	padding: 8px;
+	border-radius: 5px;
+	margin-left: 43%;
+	margin-top: 2%;
+	width: 15%;
+	font-size: 20px;
+}
+input:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+input:focus {
+	border:2px solid green;
+}
+.vol {
+	margin-top: 2%;
+}

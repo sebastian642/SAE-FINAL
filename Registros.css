@@ -1,0 +1,25 @@
+﻿body {
+}
+
+.centrar{
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    width: 20%;
+    padding:15px;
+    margin:15px;
+}
+
+.imagen {
+    display: block;
+    margin-left: auto;
+    
+
+}
+
+th {
+    background-color: lightgray;
+}
+tr {
+    background-color: lightgray;
+}

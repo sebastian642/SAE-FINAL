@@ -1,0 +1,33 @@
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+input {
+	border:2px solid red;
+	border-radius:5px;
+	font-size:30px;
+	position: relative;
+	margin-top: 20%;
+	margin-left: 32%;
+	padding: 8px;
+
+}
+input:focus {
+	border:1px solid green;
+}
+input:hover {
+	cursor: pointer;
+	background-color: lightgray;
+}
+body {
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+}
+.Docente {
+	margin-left: 15%;
+}
+.volver {
+	margin-top: 5%;
+	margin-left: 47%;
+}

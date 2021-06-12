@@ -1,0 +1,28 @@
+h1 {
+	font-family: Arial;
+	text-shadow: 2px 2px 3px red;
+}
+input {
+	margin-left: 40%;
+	margin-top: 20%;
+	border:2px solid red;
+	padding: 8px;
+	border-radius: 5px;
+	width: 20%;
+
+}
+input:hover {
+	background-color: lightgray;
+}
+input:focus {
+	border:2px solid green;
+}
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.fin {
+	margin-top: 1%;
+	cursor: pointer;
+}
