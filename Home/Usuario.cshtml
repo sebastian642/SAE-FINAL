@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Usuario";
+}
+
+<!--PAGINA USUARIO-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link rel="stylesheet" href="~/Usuarios.css" />
+</head>
+<body>
+
+    @*
+        PAGINA SECUNDARIA (USUARIO)
+        https://youtu.be/rq5RWBQ6A5M
+
+        PAGINA PRINCIPAL (ADMIN)
+        https://youtu.be/MNr5QqaDg4I
+    *@
+
+
+
+    <div class="">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label style="color:white" for="btn-menu">☰</label>
+                </div>
+
+            </div>
+        </header>
+        <div class=""></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <h4 style="text-align:center">USUARIO</h4>
+                    <a href="~/solicitud_docente1/Create">Generar solicitud</a>
+                    <a href="~/solicitud_estudiante/Create">Solicitud Estudiante</a>
+                    -------------------------------------------------
+                    <a href="~/solicitud_docente1/Index">Registros Docente</a>
+                    <a href="~/Home/Contact">Contacto</a>
+                    <a href="~/Account/Login">Cerrar Sesion</a>
+                    @Html.Partial("_LoginPartial")
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-portada">
+        <div class="capa-gradient"></div>
+
+    </div>
+    <h1 style="text-align:center">Colegio</h1>
+    <a href="~/Home/Index">OTRA PAGINA</a>
+
+    @* @Html.ActionLink("Acerca de", "About", "Home")*@
+    <!-- @Html.ActionLink("Ir a", "Contact", "Home")-->
+    <!-- @Html.ActionLink("Registrar usuarios", "Create", "Administrar_Usuarios")-->
+    <br />
+
+
+    <!--   @Html.ActionLink("Registrar dispositivos", "Create", "Area_dispositivo")-->
+    <br />
+
+    <!--ESTE LINK TIENE QUE IR EN EL ACCESO DEL USURIO-->
+    <h4></h4>
+
+    <!--tiopasto<--__--__--__--__-->
+
+
+    <!--@Html.ActionLink("Generar Solicitud", "Create", "Solicitud_docente")-->
+    <!--VA HASTA AQUI-->
+    <p align="center">
+        <font size="5px">
+            académica de bachillerato, actualmente presenta un déficit al
+            momento del préstamo de los dispositivos; acarreando problemas como:
+            No manejan las identificaciones de los equipos, no se manejan respaldos
+            de los préstamos en caso de pérdida o daño por medio de sus planillas,
+            no se presenta un control del estado de entrega, devolución y conteo de los dispositivos.
+        </font>
+    </p>
+    <h2>Institucion</h2>
+
+    <p align="justify">
+        <font size="5px">
+            La institucion educativa sufre un gran problema debido a su forma de registro de estudiantes al
+            momento de solicitar un equipo, por este motivo implementaremos un sistema que les sea mas
+            facil registrar y/o organizar los pedidos.
+        </font>
+    </p>
+</body>
+</html>
