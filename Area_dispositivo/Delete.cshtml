@@ -1,0 +1,54 @@
+﻿@model Proyecto.Models.Area_dispositivo
+
+@{
+    ViewBag.Title = "Delete";
+}
+    <body style="background-color:lightblue">
+        <h2></h2>
+
+        <h1 style="color:red">Estas seguro de eliminar los datos</h1>
+        <div>
+            <h4>Registro</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    Nombre dispositivo:
+                    @* @Html.DisplayNameFor(model => model.Nombre_del_dispositivo)*@
+                </dt>
+
+                <dd>
+
+                    @Html.DisplayFor(model => model.Nombre_del_dispositivo)
+                </dd>
+
+                <dt>
+                    Numero de serie:
+                    @*  @Html.DisplayNameFor(model => model.Numero_de_serie)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Numero_de_serie)
+                </dd>
+
+                <dt>
+                    Accesorios dispositivo:
+                    @*     @Html.DisplayNameFor(model => model.Accesorio_del_dispositivo)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Accesorio_del_dispositivo)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                    @Html.ActionLink("Registros", "Index")
+                </div>
+            }
+        </div>
+    </body>

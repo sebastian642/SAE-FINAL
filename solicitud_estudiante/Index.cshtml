@@ -1,0 +1,64 @@
+﻿    @model IEnumerable<Proyecto.Models.solicitud_estudiante>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h1>ESTA PAGINA LA VERA EL ADMIN </h1>
+<p>
+    @Html.ActionLink("Crear Usuario", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <label>Nombres Estudiante</label>
+            @*   @Html.DisplayNameFor(model => model.nomEstudiante)*@
+        </th>
+        <th>
+            <label>Apellidos Estudiante</label>
+            @*       @Html.DisplayNameFor(model => model.apellEstudiante)*@
+        </th>
+        <th>
+            <label>Salon</label>
+            @*@Html.DisplayNameFor(model => model.salon_al_cual_pertenece)*@
+        </th>
+        <th>
+            <label>Carnet</label>
+            @*   @Html.DisplayNameFor(model => model.carnetEstudiante)*@
+        </th>
+        <th>
+            <label>Elemento solicitado</label>
+            @*  @Html.DisplayNameFor(model => model.elementoSolicitado)*@
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <p></p>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.salon_al_cual_pertenece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.carnetEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.elementoSolicitado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.idEstudiante }) |
+                @*    @Html.ActionLink("Details", "Details", new { id=item.idEstudiante }) |*@
+
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.idEstudiante })
+            </td>
+        </tr>
+    }
+</table>

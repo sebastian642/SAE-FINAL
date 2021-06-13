@@ -1,0 +1,69 @@
+﻿@model Proyecto.Models.solicitud_estudiante
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3></h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>Nombres: </label>
+            @*  @Html.DisplayNameFor(model => model.nomEstudiante)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomEstudiante)
+        </dd>
+
+        <dt>
+            <label>Apellidos:</label>
+            @* @Html.DisplayNameFor(model => model.apellEstudiante)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellEstudiante)
+        </dd>
+
+        <dt>
+            <label> Salon:</label>
+            @*  @Html.DisplayNameFor(model => model.salon_al_cual_pertenece)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salon_al_cual_pertenece)
+        </dd>
+
+        <dt>
+            <label>Carnet:</label>
+            @* @Html.DisplayNameFor(model => model.carnetEstudiante)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carnetEstudiante)
+        </dd>
+
+        <dt>
+            <label>Elemento Solicitado:</label>
+            @*   @Html.DisplayNameFor(model => model.elementoSolicitado)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.elementoSolicitado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

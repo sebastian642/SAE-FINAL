@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Proyecto.Models.Administrar_Usuarios>
+    <link rel="stylesheet" type="text/css" href="~/Registros.css" />
+@{
+    ViewBag.Title = "Index";
+}
+    <body style="background-color:lightgray">
+        <h2>Gestion solicitud</h2>
+
+        <p>
+            @Html.ActionLink("Registrar Usuarios", "Create")
+            <br />
+            <br />
+            @Html.ActionLink("Pagina principal", "Index", "Home")
+        </p>
+        <table class="table">
+            <tr style="background-color:lightgray">
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Documento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Documento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Celular)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.idUsuarios }) |
+                        @*  @Html.ActionLink("Detalles", "Details", new { id = item.idUsuarios }) |*@
+                        @Html.ActionLink("Eliminar  ", "Delete", new { id = item.idUsuarios })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </body>

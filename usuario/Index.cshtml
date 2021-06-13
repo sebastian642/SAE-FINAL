@@ -1,0 +1,75 @@
+﻿@*@model IEnumerable<Proyecto.Models.inicio>
+*@
+@{
+    ViewBag.Title = "usuario Page";
+}
+
+<body style="background-color: skyblue">
+
+    <h1 style="text-align:center">Colegio</h1>
+    <div class="">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1></h1>
+                </div>
+            </div>
+        </header>
+        <div class=""></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <h4 style="text-align:center">Usuario</h4>
+                    <a href="~/Solicitud_docente/Create">Generar Solictud</a>
+                    <a href="~/Home/Contact">Contacto</a>
+                    <a href="~/Account/Login">Cerrar Sesion</a>
+                    @Html.Partial("_LoginPartial")
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+        <link rel="stylesheet" href="~/barra.css" />
+    </div>
+
+    @* @Html.ActionLink("Acerca de", "About", "Home")*@
+    <!-- @Html.ActionLink("Ir a", "Contact", "Home")-->
+    <!-- @Html.ActionLink("Registrar usuarios", "Create", "Administrar_Usuarios")-->
+    <br />
+    <!--   @Html.ActionLink("Registrar dispositivos", "Create", "Area_dispositivo")-->
+    <br />
+
+    <!--ESTE LINK TIENE QUE IR EN EL ACCESO DEL USURIO-->
+    <h4></h4>
+    <!-- @Html.ActionLink("Generar Solicitud", "Create", "Solicitud_docente")-->
+    <!--VA HASTA AQUI-->
+
+    <p align="center">
+        <font size="5px">La institución educativa Santa Bárbara I.E.D se dedica a la formación académica de bachillerato, actualmente presenta un déficit al momento del préstamo de los dispositivos; acarreando problemas como: No manejan las identificaciones de los equipos, no se manejan respaldos de los préstamos en caso de pérdida o daño por medio de sus planillas, no se presenta un control del estado de entrega, devolución y conteo de los dispositivos.</font>
+    </p>
+    <h2>Institucion</h2>
+    <table>
+        <tr>
+            <td><img src="~/Imagenes/1.jpg" width="450px" height="250px" />&nbsp;</td>
+            <td> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</td>
+            <td><img src="~/Imagenes/3.jpg" width="450px" height="250px" />&nbsp;</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><img src="~/Imagenes/2.jpg" width="450px" height="250px" />&nbsp;</td>
+            <td> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</td>
+            <td><img src="~/Imagenes/4.jpg" width="450px" height="250px" />&nbsp;</td>
+        </tr>
+    </table>
+    <p align="justify">
+        <font size="5px">
+            La institucion educativa sufre un gran problema debido a su forma de registro de estudiantes al
+            momento de solicitar un equipo, por este motivo implementaremos un sistema que les sea mas
+            facil registrar y/o organizar los pedidos.
+        </font>
+    </p>
+</body>

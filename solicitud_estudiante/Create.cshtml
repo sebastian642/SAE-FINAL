@@ -1,0 +1,80 @@
+﻿@model Proyecto.Models.solicitud_estudiante
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Registrar Estudiantes</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4></h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <p style="font-size:15px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Nombres</strong></p>
+
+        @*   @Html.LabelFor(model => model.nomEstudiante, htmlAttributes: new { @class = "control-label col-md-2" })*@
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.nomEstudiante, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.nomEstudiante, "", new { @class = "text-danger" })
+        </div>
+    </div>
+        <p>  </p>
+    <div class="form-group">
+        <p style="font-size:15px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Apellidos</strong></p>
+
+        @* @Html.LabelFor(model => model.apellEstudiante, htmlAttributes: new { @class = "control-label col-md-2" })*@
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.apellEstudiante, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.apellEstudiante, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p style="font-size:15px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Salon</strong></p>
+
+    @*@Html.LabelFor(model => model.salon_al_cual_pertenece, htmlAttributes:new{ @class = "control-label col-md-2" })*@
+
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.salon_al_cual_pertenece, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.salon_al_cual_pertenece, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p style="font-size:15px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Carnet</strong></p>
+
+        @*    @Html.LabelFor(model => model.carnetEstudiante, htmlAttributes: new { @class = "control-label col-md-2" })*@
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.carnetEstudiante, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.carnetEstudiante, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p style="font-size:15px"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Elemento Solicitado</strong></p>
+
+        @*     @Html.LabelFor(model => model.elementoSolicitado, htmlAttributes: new { @class = "control-label col-md-2" })*@
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.elementoSolicitado, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.elementoSolicitado, "", new { @class = "text-danger" })
+        </div>
+    </div>
+                                                                                                                                                            
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Crear" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="~/solicitud_estudiante/Usuario">Lista</a>
+ 
+</div>
+  

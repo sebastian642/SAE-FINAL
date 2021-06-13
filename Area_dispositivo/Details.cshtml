@@ -1,0 +1,65 @@
+﻿@model Proyecto.Models.Area_dispositivo
+
+@{
+    ViewBag.Title = "Details";
+}
+    <body style="background-color:lightgrey">
+        <h2>Registro</h2>
+
+        <div>
+            <h4></h4>
+        
+            <table class="table">
+                <tr>
+                    <th>Nombre del dispositivo</th>
+
+                    <th> Numero de serie</th>
+
+                    <th>  Accesorios del dispositivo</th>
+                </tr>
+
+
+                <tr>
+                    <td>   @Html.DisplayFor(model => model.Nombre_del_dispositivo)</td>
+
+                    <td> @Html.DisplayFor(model => model.Numero_de_serie)</td>
+
+                    <td>  @Html.DisplayFor(model => model.Accesorio_del_dispositivo)</td>
+                </tr>
+            </table>
+
+            @*
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre_del_dispositivo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombre_del_dispositivo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Numero_de_serie)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Numero_de_serie)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Accesorio_del_dispositivo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Accesorio_del_dispositivo)
+                </dd>
+
+            </dl>
+            *@
+        </div>
+        <p>
+            @Html.ActionLink("Editar", "Edit", new { id = Model.Area }) |
+            @Html.ActionLink("Registros", "Index")
+        </p>
+    </body>

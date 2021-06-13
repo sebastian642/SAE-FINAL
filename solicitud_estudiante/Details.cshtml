@@ -1,0 +1,58 @@
+﻿@model Proyecto.Models.solicitud_estudiante
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>solicitud_estudiante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomEstudiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomEstudiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellEstudiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellEstudiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salon_al_cual_pertenece)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salon_al_cual_pertenece)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.carnetEstudiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carnetEstudiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.elementoSolicitado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.elementoSolicitado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idEstudiante }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
